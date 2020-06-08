@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>2020-06-07 | shut the fuck up</title>
+<title>test | shut the fuck up</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,11 +18,9 @@
 
 
 
-    <meta name="description" content="现在是凌晨3:40，因为太饿了搞了杯麦片恰恰，牙白刷了233，写完博客再看学点typora用法就睡了。
-总结一下今天刷的网络流：
-第一题挺自闭的，自己造了好几个模型都不对，还是只能看题解，积累一下模型。
-第二题的问题挺有意思的，不知道怎么说..." />
-    <meta name="keywords" content="随笔" />
+    <meta name="description" content="test backup
+" />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -93,43 +91,20 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">2020-06-07</h2>
+            <h2 class="post-title">test</h2>
             <div class="post-date">2020-06-08</div>
             
             <div class="post-content" v-pre>
-              <p>现在是凌晨3:40，因为太饿了搞了杯麦片恰恰，牙白刷了233，写完博客再看学点typora用法就睡了。</p>
-<p>总结一下今天刷的网络流：<br>
-第一题挺自闭的，自己造了好几个模型都不对，还是只能看题解，积累一下模型。<br>
-第二题的问题挺有意思的，不知道怎么说，反正就挺有意思的。</p>
-<ol>
-<li>第一题题意是有给你张有向图，一个原点S和一个汇点T，每条边代表经过一天的时间到达另一个点，现在问你最少要破坏多少个点才能让所有可行路径中没有小于K时间到达T的。</li>
-</ol>
-<p>最小费用最大流，对于每个点，拆点，相互之间连一条容量为1，费用为0的流，每条边的不同的点之间连一条容量为INF，费用为1的流表示要过一天才能到那。 接下来就跑一下MCMF，如果d[T] &gt; k的话就return false(无所谓了，不管他)，然后最后求得的最大流也就是d[T] &lt;= k情况下的最大流，也就是最小割。</p>
-<p>2.第二题题意是给你一个长度为n的数组，现在不仅让你求LIS的长度，还让你求这个长度的LIS有几个（不相交，是原数组的子序列）。<br>
-233，这种从之前的典型例题扩展出更多问题还是挺少的，因为每个位置的元素有限制，限制就是只能被选中在一个子序列中，所以拆点( i 和 i' )，中间连一条容量为1的边，接下来就是dp O(n^2)搞一下LIS，然后遍历1~n建边：<br>
-设LIS长度为ans。<br>
-1.dp[i]  = 1 建一条容量为1的S 到 i的边。<br>
-2.dp[i] = ans 建一条容量为1的 i' 到T的边。<br>
-3.遍历1~j (1 &lt;= j &lt; i)如果 dp[i] == dp[j] + 1 &amp;&amp; a[i] &gt; a<a href="!!!%E5%88%AB%E5%BF%98%E4%BA%86%E8%BF%99%E4%B8%AA">j</a>，那么就 j' 到 i 连一条容量为1的边。<br>
-最后跑一个最大流就是答案辣。</p>
-<p>明天再搞一天网络流常规题型应该就算刷完了，继续努力8</p>
+              <p>test backup</p>
 
             </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://zholofmeister.github.io/tag/r72Cz2Yzb/" class="tag">
-                    随笔
-                  </a>
-                
-              </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://zholofmeister.github.io/post/2020-06-06/">
+                <a href="https://zholofmeister.github.io/post/2020-06-08/">
                   <h3 class="post-title">
-                    2020-06-06
+                    2020-06-08
                   </h3>
                 </a>
               </div>
