@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-06-08T19:08:09.614Z</updated>
+    <updated>2020-06-08T19:11:08.612Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -24,6 +24,7 @@
 <p>今天做了道挺有意思的题，POJ 1904,继续积累模型，有一个n个男生和n个女生组成的二分图，现在已经给你所有关系和其中一个完美匹配，问你每个男生可以选择哪些女生，使得匹配数和最大匹配数相同。</p>
 <p>思路是每个关系是一条单向边，然后被匹配的<code>女生</code>连一条单向边指向<code>男生</code>，然后就跑一下tarjan强连通，判断男生i和女生j搭配也能使匹配数是最大匹配数的依据是i和j在同一个scc中。</p>
 <p>还有一道Hdu 4685, 意思一样，区别就在于有n个男生和m个女生，n和m不一定相同，这就需要虚拟造点了，看了思路没看懂，网上也没人解释为什么，debug了2个小时感觉就在蒙，不写了，水平还没到，写了也是白写。</p>
+<p>哦对了，因为我的某些傻逼操作，把之前存在本地的博客都删了，不知道怎么恢复，只能重新发了一遍，网上找了一个软件叫GoodSync，是一个可以自动备份到本地或者外接硬盘或者云盘的一个蛮好的软件，以后只要电脑不挂就不怕丢东西了，XD。</p>
 <blockquote>
 <p>还有一个月就牛客多校了，继续努力吧!</p>
 </blockquote>
