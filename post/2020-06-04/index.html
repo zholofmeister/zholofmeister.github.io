@@ -1,233 +1,169 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>2020-06-04 | shut the fuck up</title>
-<meta name="description" content="what ever can happen will happen">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://zholofmeister.github.io/favicon.ico?v=1591597315712">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://zholofmeister.github.io/favicon.ico?v=1591597448172">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://zholofmeister.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="2020-06-04 | shut the fuck up - Atom Feed" href="https://zholofmeister.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
+    <meta name="description" content="上午线代？白给，不想听，下午去实验室搞了一下，鼠标和桌子是真的脏，尤其是鼠标还有一股我这辈子没闻过的奇特味道，像是鱼腥味，我也不知道放实验室放了半年怎么会有鱼腥味的，是真的牛皮，下午做了照着kuangbin专题两道最大流模板，发现了自己is..." />
+    <meta name="keywords" content="随笔" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://zholofmeister.github.io">shut the fuck up</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>2020-06-04</h1>
-            <p class="article-meta">
-              2020-06-08
-              
-                <a href="https://zholofmeister.github.io/tag/r72Cz2Yzb/" class="badge warning">
-                  随笔
-                </a>
-              
-            </p>
-            
-            <div class="post-content">
-              <p>上午线代？白给，不想听，下午去实验室搞了一下，鼠标和桌子是真的脏，尤其是鼠标还有一股我这辈子没闻过的奇特味道，像是鱼腥味，我也不知道放实验室放了半年怎么会有鱼腥味的，是真的牛皮，下午做了照着kuangbin专题两道最大流模板，发现了自己isap模板里的锅，一开始没把d数组全赋为INF，谢谢这道题。晚上打了会拳击，又搞了一道网络流，题意是有n个作业和m个机器，一个作业在某个时间只能分给一个机器，一个机器在某个时间只能完成一个作业，n个作业有三个参数p,s,e，表示需要p时间做完,可以在s~e这段时间内搞完，问你可不可以搞完全部的作业？建图思路是先搞一个超级原点s和超级汇点t，然后s向每个作业连容量为p的边，表示需要你用p单位流量搞完，怎么搞的我不管，每个作业又和他的时间中的每一天连一条容量为1的边，表示每天能做1份作业，最后每一天连向汇点一条容量为m，也就是机器数量的边，因为有m台机器，表示每一天能搞掉m份作业，建图就没了，跑个最大流，看maxflow 和所有 p 的总和相不相等，相等就是Yes，可以搞定，否则则就是No，因为No打成了NO wa了一发，略难受，马上睡了，再看看typora的使用吧，反正明天没课，起了床就滚去实验室了，nightnight。</p>
-
-            </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-            <div class="next-post">
-              <div class="next">
-                下一篇
-              </div>
-              <a href="https://zholofmeister.github.io/post/fei-xun-n1-jiu-zhuan-ri-ji/">
-                <h3 class="post-title">
-                  斐讯n1救砖日记
-                </h3>
-              </a>
-            </div>
-          
-        </div>
-        
-      </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://zholofmeister.github.io/images/avatar.png?v=1591597315712" class="no-responsive avatar">
-    <div class="text-muted">what ever can happen will happen</div>
-    <div class="social-container">
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://zholofmeister.github.io">
+  <img class="avatar" src="https://zholofmeister.github.io/images/avatar.png?v=1591597448172" alt="">
+  </a>
+  <h1 class="site-title">
+    shut the fuck up
+  </h1>
+  <p class="site-description">
+    what ever can happen will happen
+  </p>
+  <div class="menu-container">
+    
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://zholofmeister.github.io/post/2020-06-08/">2020-06-08</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://zholofmeister.github.io/post/2020-06-07/">2020-06-07</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://zholofmeister.github.io/post/2020-06-06/">2020-06-06</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://zholofmeister.github.io/post/2020-06-04/">2020-06-04</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://zholofmeister.github.io/post/fei-xun-n1-jiu-zhuan-ri-ji/">斐讯n1救砖日记</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://zholofmeister.github.io/post/about/">关于</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://zholofmeister.github.io/post/hello-gridea/">Hello Gridea</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://zholofmeister.github.io/tag/r72Cz2Yzb/" class="badge secondary">
-          随笔
+        <a href="/" class="menu">
+          首页
         </a>
       
-        <a href="https://zholofmeister.github.io/tag/wdOfkJXjf/" class="badge warning">
-          斐讯n1
+    
+      
+        <a href="/archives" class="menu">
+          归档
         </a>
       
-        <a href="https://zholofmeister.github.io/tag/tOSygX9iC/" class="badge ">
-          救砖
+    
+      
+        <a href="/tags" class="menu">
+          标签
         </a>
       
-        <a href="https://zholofmeister.github.io/tag/74vKWGMAa/" class="badge ">
-          Gridea
+    
+      
+        <a href="/post/about" class="menu">
+          关于
         </a>
       
-    </div>
+    
   </div>
-  <div class="paper">
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zholofmeister.github.io/atom.xml" target="_blank">RSS</a>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
   </div>
 </div>
 
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              2020-06-04
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-06-08
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://zholofmeister.github.io/tag/r72Cz2Yzb/" class="post-tag">
+                  # 随笔
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>上午线代？白给，不想听，下午去实验室搞了一下，鼠标和桌子是真的脏，尤其是鼠标还有一股我这辈子没闻过的奇特味道，像是鱼腥味，我也不知道放实验室放了半年怎么会有鱼腥味的，是真的牛皮，下午做了照着kuangbin专题两道最大流模板，发现了自己isap模板里的锅，一开始没把d数组全赋为INF，谢谢这道题。晚上打了会拳击，又搞了一道网络流，题意是有n个作业和m个机器，一个作业在某个时间只能分给一个机器，一个机器在某个时间只能完成一个作业，n个作业有三个参数p,s,e，表示需要p时间做完,可以在s~e这段时间内搞完，问你可不可以搞完全部的作业？建图思路是先搞一个超级原点s和超级汇点t，然后s向每个作业连容量为p的边，表示需要你用p单位流量搞完，怎么搞的我不管，每个作业又和他的时间中的每一天连一条容量为1的边，表示每天能做1份作业，最后每一天连向汇点一条容量为m，也就是机器数量的边，因为有m台机器，表示每一天能搞掉m份作业，建图就没了，跑个最大流，看maxflow 和所有 p 的总和相不相等，相等就是Yes，可以搞定，否则则就是No，因为No打成了NO wa了一发，略难受，马上睡了，再看看typora的使用吧，反正明天没课，起了床就滚去实验室了，nightnight。</p>
 
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://zholofmeister.github.io/post/fei-xun-n1-jiu-zhuan-ri-ji/">
+              <h3 class="post-title">
+                斐讯n1救砖日记
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://zholofmeister.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad()
 
-<script type="application/javascript">
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
 
-AOS.init();
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
 
-hljs.initHighlightingOnLoad()
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
 
-</script>
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
 
-
-
-
+    </script>
   </body>
 </html>
