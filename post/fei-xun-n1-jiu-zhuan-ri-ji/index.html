@@ -1,154 +1,143 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>斐讯n1救砖日记 | shut the fuck up</title>
-<meta name="description" content="what ever can happen will happen">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zholofmeister.github.io/favicon.ico?v=1591597505282">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://zholofmeister.github.io/favicon.ico?v=1591597620200">
 <link rel="stylesheet" href="https://zholofmeister.github.io/styles/main.css">
 
 
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
+    <meta name="description" content="今天突然想把砖救活的欲望大过了刷题的欲望，于是就搜了搜如何救n1的砖，上次因为没有合适的螺丝刀就先过了，今天去问别人接了个螺丝刀，一个个试，换到最小号的终于能拧开了..，然后隔壁寝室竟然有镊子（短接进入强制线刷模式用）？？太幸运了，借来用一..." />
+    <meta name="keywords" content="斐讯n1,救砖" />
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://zholofmeister.github.io">
-        <img class="avatar" src="https://zholofmeister.github.io/images/avatar.png?v=1591597505282" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://zholofmeister.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zholofmeister.github.io">
+        <img src="https://zholofmeister.github.io/images/avatar.png?v=1591597620200" class="site-logo">
         <h1 class="site-title">shut the fuck up</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="/" class="menu purple-link">
+          <a href="/" class="site-nav">
             首页
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
+          <a href="/archives" class="site-nav">
             归档
           </a>
         
       
         
-          <a href="/tags" class="menu purple-link">
+          <a href="/tags" class="site-nav">
             标签
           </a>
         
       
         
-          <a href="/post/about" class="menu purple-link">
+          <a href="/post/about" class="site-nav">
             关于
           </a>
         
       
     </div>
   </div>
-</transition>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      what ever can happen will happen
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zholofmeister.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
 
-      <div class="content-container">
-        <div class="post-detail">
-          
-          <h2 class="post-title">斐讯n1救砖日记</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2020-06-08</span>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">斐讯n1救砖日记</h2>
+            <div class="post-date">2020-06-08</div>
             
-              <span>
-                <i class="icon-pricetags-outline"></i>
-                
-                  <a href="https://zholofmeister.github.io/tag/wdOfkJXjf/">
-                    斐讯n1
-                    
-                      ，
-                    
-                  </a>
-                
-                  <a href="https://zholofmeister.github.io/tag/tOSygX9iC/">
-                    救砖
-                    
-                  </a>
-                
-              </span>
-            
-          </div>
-          <div class="post-content">
-            <p>今天突然想把砖救活的欲望大过了刷题的欲望，于是就搜了搜如何救n1的砖，上次因为没有合适的螺丝刀就先过了，今天去问别人接了个螺丝刀，一个个试，换到最小号的终于能拧开了..，然后隔壁寝室竟然有镊子（短接进入强制线刷模式用）？？太幸运了，借来用一下，以下是教程。</p>
+            <div class="post-content" v-pre>
+              <p>今天突然想把砖救活的欲望大过了刷题的欲望，于是就搜了搜如何救n1的砖，上次因为没有合适的螺丝刀就先过了，今天去问别人接了个螺丝刀，一个个试，换到最小号的终于能拧开了..，然后隔壁寝室竟然有镊子（短接进入强制线刷模式用）？？太幸运了，借来用一下，以下是教程。</p>
 <p>材料：<br>
 刷机固件，螺丝刀，镊子（或者任何能用来短接的东西）,USB公对公数据线。</p>
 <p>1.先把n1背后的防滑垫搞掉，把螺丝拧下来，然后把后盖撬一下，就掉下来了，接下来就把他放那先别动好了。<br>
 2.接下来就下载了wepad大神的救砖教程，先按照他的教程把他给的文件复制到usb burning tools下的license文件中，然后先导入烧录包，把两个擦除都点取消，点开始，接下来先用usb公对公线把n1和电脑相连，然后最重要的一步来了，先用镊子短接两个点，具体可以谷歌搜是哪两个，然后再短接两个点的同时插入电源，这样usb burning tools 就会识别出设备，就会自己开始烧录了，但是他的n1和t1固件都烧录不成功，一个在%1一个在%26就报错了，后来看了韩风talk的视频想到用rush大神的荒野蛮夷固件，一次就成功了！</p>
 <p>搞了两个小时可还行，个人觉得刷机比刷题累多了XD。</p>
 
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zholofmeister.github.io/tag/wdOfkJXjf/" class="tag">
+                    斐讯n1
+                  </a>
+                
+                  <a href="https://zholofmeister.github.io/tag/tOSygX9iC/" class="tag">
+                    救砖
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zholofmeister.github.io/post/hello-gridea/">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
+
         </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://zholofmeister.github.io/post/hello-gridea/">
-              <h3 class="post-title">
-                下一篇：Hello Gridea
-              </h3>
-            </a>
-          </div>
-          
       </div>
-
-      
-
-      <div class="site-footer">
-  <div class="slogan">what ever can happen will happen</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zholofmeister.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-
     </div>
-    <script type="application/javascript">
 
-hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
 
 var app = new Vue({
   el: '#app',
@@ -158,6 +147,8 @@ var app = new Vue({
 })
 
 </script>
+
+
 
 
 
