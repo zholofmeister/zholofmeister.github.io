@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-06-08T06:10:04.754Z</updated>
+    <updated>2020-06-08T06:22:01.069Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -10,6 +10,109 @@
     <logo>https://zholofmeister.github.io/images/avatar.png</logo>
     <icon>https://zholofmeister.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, shut the fuck up</rights>
+    <entry>
+        <title type="html"><![CDATA[2020-06-08]]></title>
+        <id>https://zholofmeister.github.io/post/2020-06-08/</id>
+        <link href="https://zholofmeister.github.io/post/2020-06-08/">
+        </link>
+        <updated>2020-06-08T06:21:42.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="凌晨255">凌晨2:55</h3>
+<p>今天没啥收货，最大的收获应该是<strong>cf上分了</strong>吧，但cf水平并不代表现场赛水平，还是要多刷题，确立了明天，准确的说是今天的目标，学习<strong>欧拉回路</strong>。</p>
+<p>就复盘一下今天的cf吧。</p>
+<ul>
+<li>
+<p>A</p>
+<p>给你一个n*m矩形，0表示还没被用，1表示已经被用，现在a和b分别取，取得条件是该行和该列都要是0，也就是该行该列的元素都是0。</p>
+</li>
+</ul>
+<p>​		预处理一下每行为0和每列为0的个数，取个min，判断奇偶即可。</p>
+<ul>
+<li>
+<p>B</p>
+<p>给你n个ai, bi, 这个ai和bi是一个pair，bi只能取0或者1，现在规定只能交换bi不同的pair，问你能不能让a变成non-decreasing的样子。</p>
+<p>首先要知道，只要有有bi == 0 和 bi == 1那他们无论如何都能换成有序的，就像是汉诺塔一样，通过第三根柱子先把一二根柱子搞好，差不多就是这个感觉，如果bi == 0里面a不是non-decreasing的<strong>并且</strong>没有bi == 1就是false，bi == 1同理，因为没想到一定要没有另一个团wa了一发，幸好及时想到 😃</p>
+</li>
+<li>
+<p>C</p>
+<p>也是分别给你一串长度为n的a和b数组，现在问a或者b向左或向右移动后（是个循环，懂我意思吧），最多有多少位置上的数相同。</p>
+<p>因为每个数的范围是(1 &lt;= x &lt;= n), 所以对a数组和b数组分别预记录一下每个数的位置，然后记录向左和向右的距离的数组++, 最后遍历一下向左向右的每种长度的可能取个max就行了。</p>
+<blockquote>
+<p>写个每日总结也是累人啊，gnls，困死了。</p>
+</blockquote>
+</li>
+<li>
+<p>D</p>
+<p>给你一个n*m的迷宫，有空地，墙，好人和坏人，现在问你能不能在除了初始时候好人和坏人和墙的位置的其他位置加墙，使得所有好人能到终点，<strong>并且所有坏人到不了</strong>。</p>
+<p>今天思维还可以，想到的思路基本上都是对的，就是对每个坏人都bfs，只要遇到空地就放墙，然后就结了，最后从终点bfs看能不能到所有的好人就完了。</p>
+</li>
+<li>
+<p>E</p>
+<p>没啥意思，cf专属题，猜猜题，gnls，先取三个，然后看取四个会不会比取三个更优，发现不会比取三个更优，所以取三个（不满三个就取全部喽）是最优的，然后暴力n^3 (n &lt;= 500) 遍历所有可能就行了。</p>
+</li>
+</ul>
+<p>F不写了没啥意思，也是思维题，凭感觉搞。<em>来自菜鸡的感觉</em></p>
+<p>看会视频睡喽，明天也要继续努力奥！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020-06-07]]></title>
+        <id>https://zholofmeister.github.io/post/2020-06-07/</id>
+        <link href="https://zholofmeister.github.io/post/2020-06-07/">
+        </link>
+        <updated>2020-06-08T06:17:37.000Z</updated>
+        <content type="html"><![CDATA[<p>现在是凌晨3:40，因为太饿了搞了杯麦片恰恰，牙白刷了233，写完博客再看学点typora用法就睡了。</p>
+<p>总结一下今天刷的网络流：<br>
+第一题挺自闭的，自己造了好几个模型都不对，还是只能看题解，积累一下模型。<br>
+第二题的问题挺有意思的，不知道怎么说，反正就挺有意思的。</p>
+<ol>
+<li>第一题题意是有给你张有向图，一个原点S和一个汇点T，每条边代表经过一天的时间到达另一个点，现在问你最少要破坏多少个点才能让所有可行路径中没有小于K时间到达T的。</li>
+</ol>
+<p>最小费用最大流，对于每个点，拆点，相互之间连一条容量为1，费用为0的流，每条边的不同的点之间连一条容量为INF，费用为1的流表示要过一天才能到那。 接下来就跑一下MCMF，如果d[T] &gt; k的话就return false(无所谓了，不管他)，然后最后求得的最大流也就是d[T] &lt;= k情况下的最大流，也就是最小割。</p>
+<p>2.第二题题意是给你一个长度为n的数组，现在不仅让你求LIS的长度，还让你求这个长度的LIS有几个（不相交，是原数组的子序列）。<br>
+233，这种从之前的典型例题扩展出更多问题还是挺少的，因为每个位置的元素有限制，限制就是只能被选中在一个子序列中，所以拆点( i 和 i' )，中间连一条容量为1的边，接下来就是dp O(n^2)搞一下LIS，然后遍历1~n建边：<br>
+设LIS长度为ans。<br>
+1.dp[i]  = 1 建一条容量为1的S 到 i的边。<br>
+2.dp[i] = ans 建一条容量为1的 i' 到T的边。<br>
+3.遍历1~j (1 &lt;= j &lt; i)如果 dp[i] == dp[j] + 1 &amp;&amp; a[i] &gt; a<a href="!!!%E5%88%AB%E5%BF%98%E4%BA%86%E8%BF%99%E4%B8%AA">j</a>，那么就 j' 到 i 连一条容量为1的边。<br>
+最后跑一个最大流就是答案辣。</p>
+<p>明天再搞一天网络流常规题型应该就算刷完了，继续努力8</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020-06-06]]></title>
+        <id>https://zholofmeister.github.io/post/2020-06-06/</id>
+        <link href="https://zholofmeister.github.io/post/2020-06-06/">
+        </link>
+        <updated>2020-06-08T06:16:39.000Z</updated>
+        <content type="html"><![CDATA[<p>今天搞了两道网络流（其中一道搞了三个小时），再学了一下如何更新lean大编译的op固件。</p>
+<p>第一道题目让你求最大流 / 最大单流流量的最小值，因为最大流是恒定的，所以要找最大的单流流量值，我已开始的想法是遍历汇点周围的水管，取个max，但这有个问题，因为他周围的水管不一定是单流，有可能是多条路汇在一起形成的，所以不能这么做，网上正解是先预处理一下，dfs O(V + E)时间内预处理出到达汇点的最大的单流流量值，然后就做完了，跑个最大流再除以预处理出的最大单流流量值就没了。</p>
+<p>第二道题目是女生找男生的升级版，之前也有一道女生找男生，不同的是之前那道题没有还能找k个会吵架的男生这个条件。这题拆点挺有意思的，同样的先用并查集预处理出每个女生和男生关系（吵不吵架）的二维数组，接着遍历每个女生和男生，看他们之间的关系，如果不吵架，那直接连一条容量为1的管子，如果吵架的话，那就让女生连一条容量为k的管子先到 女生' ，接着女生' 再连一条容量为1的管子到男生，这是每次二分要进行判断的步骤，最后如果 maxflow == n * mid就说明能跑mid轮match up，就没了。</p>
+<p>明天继续：）</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020-06-04]]></title>
+        <id>https://zholofmeister.github.io/post/2020-06-04/</id>
+        <link href="https://zholofmeister.github.io/post/2020-06-04/">
+        </link>
+        <updated>2020-06-08T06:14:20.000Z</updated>
+        <content type="html"><![CDATA[<p>上午线代？白给，不想听，下午去实验室搞了一下，鼠标和桌子是真的脏，尤其是鼠标还有一股我这辈子没闻过的奇特味道，像是鱼腥味，我也不知道放实验室放了半年怎么会有鱼腥味的，是真的牛皮，下午做了照着kuangbin专题两道最大流模板，发现了自己isap模板里的锅，一开始没把d数组全赋为INF，谢谢这道题。晚上打了会拳击，又搞了一道网络流，题意是有n个作业和m个机器，一个作业在某个时间只能分给一个机器，一个机器在某个时间只能完成一个作业，n个作业有三个参数p,s,e，表示需要p时间做完,可以在s~e这段时间内搞完，问你可不可以搞完全部的作业？建图思路是先搞一个超级原点s和超级汇点t，然后s向每个作业连容量为p的边，表示需要你用p单位流量搞完，怎么搞的我不管，每个作业又和他的时间中的每一天连一条容量为1的边，表示每天能做1份作业，最后每一天连向汇点一条容量为m，也就是机器数量的边，因为有m台机器，表示每一天能搞掉m份作业，建图就没了，跑个最大流，看maxflow 和所有 p 的总和相不相等，相等就是Yes，可以搞定，否则则就是No，因为No打成了NO wa了一发，略难受，马上睡了，再看看typora的使用吧，反正明天没课，起了床就滚去实验室了，nightnight。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[斐讯n1救砖日记]]></title>
+        <id>https://zholofmeister.github.io/post/fei-xun-n1-jiu-zhuan-ri-ji/</id>
+        <link href="https://zholofmeister.github.io/post/fei-xun-n1-jiu-zhuan-ri-ji/">
+        </link>
+        <updated>2020-06-08T06:13:47.000Z</updated>
+        <content type="html"><![CDATA[<p>今天突然想把砖救活的欲望大过了刷题的欲望，于是就搜了搜如何救n1的砖，上次因为没有合适的螺丝刀就先过了，今天去问别人接了个螺丝刀，一个个试，换到最小号的终于能拧开了..，然后隔壁寝室竟然有镊子（短接进入强制线刷模式用）？？太幸运了，借来用一下，以下是教程。</p>
+<p>材料：<br>
+刷机固件，螺丝刀，镊子（或者任何能用来短接的东西）,USB公对公数据线。</p>
+<p>1.先把n1背后的防滑垫搞掉，把螺丝拧下来，然后把后盖撬一下，就掉下来了，接下来就把他放那先别动好了。<br>
+2.接下来就下载了wepad大神的救砖教程，先按照他的教程把他给的文件复制到usb burning tools下的license文件中，然后先导入烧录包，把两个擦除都点取消，点开始，接下来先用usb公对公线把n1和电脑相连，然后最重要的一步来了，先用镊子短接两个点，具体可以谷歌搜是哪两个，然后再短接两个点的同时插入电源，这样usb burning tools 就会识别出设备，就会自己开始烧录了，但是他的n1和t1固件都烧录不成功，一个在%1一个在%26就报错了，后来看了韩风talk的视频想到用rush大神的荒野蛮夷固件，一次就成功了！</p>
+<p>搞了两个小时可还行，个人觉得刷机比刷题累多了XD。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://zholofmeister.github.io/post/hello-gridea/</id>

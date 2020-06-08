@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>文章归档 | shut the fuck up</title>
+<title>2020-06-06 | shut the fuck up</title>
 <meta name="description" content="what ever can happen will happen">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -23,6 +23,7 @@
 
   </head>
   <body>
+  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="https://zholofmeister.github.io">shut the fuck up</a></h3>
@@ -76,101 +77,46 @@
   </div>
 </nav>
 
-    
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
-          
+          <article class="article">
+            <h1>2020-06-06</h1>
+            <p class="article-meta">
+              2020-06-08
+              
+                <a href="https://zholofmeister.github.io/tag/r72Cz2Yzb/" class="badge ">
+                  随笔
+                </a>
+              
+            </p>
+            
+            <div class="post-content">
+              <p>今天搞了两道网络流（其中一道搞了三个小时），再学了一下如何更新lean大编译的op固件。</p>
+<p>第一道题目让你求最大流 / 最大单流流量的最小值，因为最大流是恒定的，所以要找最大的单流流量值，我已开始的想法是遍历汇点周围的水管，取个max，但这有个问题，因为他周围的水管不一定是单流，有可能是多条路汇在一起形成的，所以不能这么做，网上正解是先预处理一下，dfs O(V + E)时间内预处理出到达汇点的最大的单流流量值，然后就做完了，跑个最大流再除以预处理出的最大单流流量值就没了。</p>
+<p>第二道题目是女生找男生的升级版，之前也有一道女生找男生，不同的是之前那道题没有还能找k个会吵架的男生这个条件。这题拆点挺有意思的，同样的先用并查集预处理出每个女生和男生关系（吵不吵架）的二维数组，接着遍历每个女生和男生，看他们之间的关系，如果不吵架，那直接连一条容量为1的管子，如果吵架的话，那就让女生连一条容量为k的管子先到 女生' ，接着女生' 再连一条容量为1的管子到男生，这是每次二分要进行判断的步骤，最后如果 maxflow == n * mid就说明能跑mid轮match up，就没了。</p>
+<p>明天继续：）</p>
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
-            
-              <h3 class="year" data-aos-delay="500">2020</h3>
-              
-                
-                  <article class="post">
-                    <a href="https://zholofmeister.github.io/post/2020-06-08/">
-                      <h4 class="post-title">
-                        2020-06-08
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://zholofmeister.github.io/post/2020-06-07/">
-                      <h4 class="post-title">
-                        2020-06-07
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://zholofmeister.github.io/post/2020-06-06/">
-                      <h4 class="post-title">
-                        2020-06-06
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://zholofmeister.github.io/post/2020-06-04/">
-                      <h4 class="post-title">
-                        2020-06-04
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://zholofmeister.github.io/post/fei-xun-n1-jiu-zhuan-ri-ji/">
-                      <h4 class="post-title">
-                        斐讯n1救砖日记
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-              
-            
-              <h3 class="year" data-aos-delay="500">2018</h3>
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-                  <article class="post">
-                    <a href="https://zholofmeister.github.io/post/hello-gridea/">
-                      <h4 class="post-title">
-                        Hello Gridea
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-            
-          </div>
+            </div>
+          </article>
         </div>
-        <div class="row flex-edges">
-  
-  
-</div>
-
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://zholofmeister.github.io/post/2020-06-04/">
+                <h3 class="post-title">
+                  2020-06-04
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
       </div>
+
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="https://zholofmeister.github.io/images/avatar.png?v=1591597315712" class="no-responsive avatar">
@@ -247,15 +193,15 @@
     </div>
     <div class="row">
       
-        <a href="https://zholofmeister.github.io/tag/r72Cz2Yzb/" class="badge success">
+        <a href="https://zholofmeister.github.io/tag/r72Cz2Yzb/" class="badge secondary">
           随笔
         </a>
       
-        <a href="https://zholofmeister.github.io/tag/wdOfkJXjf/" class="badge warning">
+        <a href="https://zholofmeister.github.io/tag/wdOfkJXjf/" class="badge secondary">
           斐讯n1
         </a>
       
-        <a href="https://zholofmeister.github.io/tag/tOSygX9iC/" class="badge secondary">
+        <a href="https://zholofmeister.github.io/tag/tOSygX9iC/" class="badge success">
           救砖
         </a>
       
@@ -270,6 +216,8 @@
   </div>
 </div>
 
+
+    </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 

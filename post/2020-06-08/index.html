@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>文章归档 | shut the fuck up</title>
+<title>2020-06-08 | shut the fuck up</title>
 <meta name="description" content="what ever can happen will happen">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -23,6 +23,7 @@
 
   </head>
   <body>
+  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="https://zholofmeister.github.io">shut the fuck up</a></h3>
@@ -76,101 +77,78 @@
   </div>
 </nav>
 
-    
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
-          
+          <article class="article">
+            <h1>2020-06-08</h1>
+            <p class="article-meta">
+              2020-06-08
+              
+                <a href="https://zholofmeister.github.io/tag/r72Cz2Yzb/" class="badge success">
+                  随笔
+                </a>
+              
+            </p>
+            
+            <div class="post-content">
+              <h3 id="凌晨255">凌晨2:55</h3>
+<p>今天没啥收货，最大的收获应该是<strong>cf上分了</strong>吧，但cf水平并不代表现场赛水平，还是要多刷题，确立了明天，准确的说是今天的目标，学习<strong>欧拉回路</strong>。</p>
+<p>就复盘一下今天的cf吧。</p>
+<ul>
+<li>
+<p>A</p>
+<p>给你一个n*m矩形，0表示还没被用，1表示已经被用，现在a和b分别取，取得条件是该行和该列都要是0，也就是该行该列的元素都是0。</p>
+</li>
+</ul>
+<p>​		预处理一下每行为0和每列为0的个数，取个min，判断奇偶即可。</p>
+<ul>
+<li>
+<p>B</p>
+<p>给你n个ai, bi, 这个ai和bi是一个pair，bi只能取0或者1，现在规定只能交换bi不同的pair，问你能不能让a变成non-decreasing的样子。</p>
+<p>首先要知道，只要有有bi == 0 和 bi == 1那他们无论如何都能换成有序的，就像是汉诺塔一样，通过第三根柱子先把一二根柱子搞好，差不多就是这个感觉，如果bi == 0里面a不是non-decreasing的<strong>并且</strong>没有bi == 1就是false，bi == 1同理，因为没想到一定要没有另一个团wa了一发，幸好及时想到 😃</p>
+</li>
+<li>
+<p>C</p>
+<p>也是分别给你一串长度为n的a和b数组，现在问a或者b向左或向右移动后（是个循环，懂我意思吧），最多有多少位置上的数相同。</p>
+<p>因为每个数的范围是(1 &lt;= x &lt;= n), 所以对a数组和b数组分别预记录一下每个数的位置，然后记录向左和向右的距离的数组++, 最后遍历一下向左向右的每种长度的可能取个max就行了。</p>
+<blockquote>
+<p>写个每日总结也是累人啊，gnls，困死了。</p>
+</blockquote>
+</li>
+<li>
+<p>D</p>
+<p>给你一个n*m的迷宫，有空地，墙，好人和坏人，现在问你能不能在除了初始时候好人和坏人和墙的位置的其他位置加墙，使得所有好人能到终点，<strong>并且所有坏人到不了</strong>。</p>
+<p>今天思维还可以，想到的思路基本上都是对的，就是对每个坏人都bfs，只要遇到空地就放墙，然后就结了，最后从终点bfs看能不能到所有的好人就完了。</p>
+</li>
+<li>
+<p>E</p>
+<p>没啥意思，cf专属题，猜猜题，gnls，先取三个，然后看取四个会不会比取三个更优，发现不会比取三个更优，所以取三个（不满三个就取全部喽）是最优的，然后暴力n^3 (n &lt;= 500) 遍历所有可能就行了。</p>
+</li>
+</ul>
+<p>F不写了没啥意思，也是思维题，凭感觉搞。<em>来自菜鸡的感觉</em></p>
+<p>看会视频睡喽，明天也要继续努力奥！</p>
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
-            
-              <h3 class="year" data-aos-delay="500">2020</h3>
-              
-                
-                  <article class="post">
-                    <a href="https://zholofmeister.github.io/post/2020-06-08/">
-                      <h4 class="post-title">
-                        2020-06-08
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://zholofmeister.github.io/post/2020-06-07/">
-                      <h4 class="post-title">
-                        2020-06-07
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://zholofmeister.github.io/post/2020-06-06/">
-                      <h4 class="post-title">
-                        2020-06-06
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://zholofmeister.github.io/post/2020-06-04/">
-                      <h4 class="post-title">
-                        2020-06-04
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://zholofmeister.github.io/post/fei-xun-n1-jiu-zhuan-ri-ji/">
-                      <h4 class="post-title">
-                        斐讯n1救砖日记
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-                
-              
-            
-              <h3 class="year" data-aos-delay="500">2018</h3>
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-                  <article class="post">
-                    <a href="https://zholofmeister.github.io/post/hello-gridea/">
-                      <h4 class="post-title">
-                        Hello Gridea
-                      </h4>
-                    </a>
-                  </article>
-                
-              
-            
-          </div>
+            </div>
+          </article>
         </div>
-        <div class="row flex-edges">
-  
-  
-</div>
-
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://zholofmeister.github.io/post/2020-06-07/">
+                <h3 class="post-title">
+                  2020-06-07
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
       </div>
+
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="https://zholofmeister.github.io/images/avatar.png?v=1591597315712" class="no-responsive avatar">
@@ -247,15 +225,15 @@
     </div>
     <div class="row">
       
-        <a href="https://zholofmeister.github.io/tag/r72Cz2Yzb/" class="badge success">
+        <a href="https://zholofmeister.github.io/tag/r72Cz2Yzb/" class="badge warning">
           随笔
         </a>
       
-        <a href="https://zholofmeister.github.io/tag/wdOfkJXjf/" class="badge warning">
+        <a href="https://zholofmeister.github.io/tag/wdOfkJXjf/" class="badge ">
           斐讯n1
         </a>
       
-        <a href="https://zholofmeister.github.io/tag/tOSygX9iC/" class="badge secondary">
+        <a href="https://zholofmeister.github.io/tag/tOSygX9iC/" class="badge success">
           救砖
         </a>
       
@@ -270,6 +248,8 @@
   </div>
 </div>
 
+
+    </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
