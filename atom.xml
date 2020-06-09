@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-06-08T19:14:39.585Z</updated>
+    <updated>2020-06-09T19:20:30.162Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -10,6 +10,58 @@
     <logo>https://zholofmeister.github.io/images/avatar.png</logo>
     <icon>https://zholofmeister.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, shut the fuck up</rights>
+    <entry>
+        <title type="html"><![CDATA[2020-06-10 脑力训练的一天]]></title>
+        <id>https://zholofmeister.github.io/post/2020-06-10-nao-li-xun-lian-de-yi-tian/</id>
+        <link href="https://zholofmeister.github.io/post/2020-06-10-nao-li-xun-lian-de-yi-tian/">
+        </link>
+        <updated>2020-06-09T19:19:53.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="凌晨257">凌晨2:57</h3>
+<p>训练的一天，算是搞了三道题吧，还有一道网络流输入太毒瘤了，心态崩了，没做下去。</p>
+<ol>
+<li>
+<p>用网络流求二分图最大匹配，并且输出每个配对的信息。</p>
+<p>求最大匹配就造一个超级原点和超级汇点跑一下最大流就行了。</p>
+<p>输出信息可以遍历输入的每条边，存一下他们在edges数组中的编号，dicnic后遍历他们，如果e.cap == e.flow就说明是一个配对，输出e.from, e.to。</p>
+</li>
+<li>
+<p>最大权闭合子图。</p>
+<h4 id="什么是最大权闭合子图">什么是最大权闭合子图?</h4>
+<blockquote>
+<p>有一个有向图，每一个点都有一个权值（可以为正或负或0），选择一个权值和最大的子图，使得每个点的后继都在子图里面，这个子图就叫最大权闭合子图。</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://img-blog.csdn.net/20170826170245647?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FuOTE5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="有向图" loading="lazy"></figure>
+<h4 id="如果搞">如果搞？</h4>
+<blockquote>
+<p>最大闭权子图一个经典的网络流问题，如果一个点被选择了则后继必须被选择，那么称该图是 闭合的，因此该问题叫做最大权闭合子图问题。可以使用最小割解决。<br>
+具体的建图方法为：<br>
+源点向所有正权点连结一条容量为权值的边<br>
+保留原图中所有的边，容量为正无穷<br>
+所有负权点向汇点连结一条容量为权值绝对值的边<br>
+则原图的最大权闭合子图的点权和即为所有正权点权值之和减去建出的网络流图的最小割。<br>
+以下约定源点为 ss，汇点为 tt。<br>
+在最小割图上，如果割掉 ss 和 uu 之间的边，代表不选择 uu 进入子图（收益 &lt; 总消耗），如果割掉 vv 和 tt 之间的边，代表选择 vv 进入子图。<br>
+求完最小割后，如果点 ii 与 ss 相连，那么子图上会选择点 ii，如果 ii 与 tt 相连，则不选择点 ii。</p>
+</blockquote>
+<p>经典问题就是给你n个药品计划，每个计划有赞助商给的钱，但是每个计划也分别需要某些药品，当然，这些药品分别需要钱来买，现在问你最大收益是多少。</p>
+<h5 id="解法">解法:</h5>
+<p>源点向所有正权点连结一条容量为权值的边<br>
+保留原图中所有的边，容量为正无穷<br>
+所有负权点向汇点连结一条容量为权值绝对值的边</p>
+<p>跑个最大流，用来作最小割，（原因可以想一想<code>收益 &gt; 消耗</code>和<code>收益 &lt; 消耗</code>两种情况）</p>
+<p>用所有收益和 - 最小割就是答案。</p>
+</li>
+<li>
+<p>一道一眼看不出rmq st表的rmq st表，给你n个ai,是个non-decreasing数组，下面m个询问l, r， 问你l， r区间中出现频率最高的数出现了多少次。</p>
+<h5 id="解法-2">解法：</h5>
+<p>先预处理一个a[i]数组表示到i这个位置的数已经连续出现的次数。</p>
+<p><code>询问部分</code>：然后如果<code>a[l] != 1</code>，就把l往右推，当然不能超过r，同时记录一下推了几格，然后对几格和推了以后的l, r的rmq取个max就是答案了。</p>
+<p>最坏时间复杂度O(n*q)，但q没给范围，迷惑行为。</p>
+</li>
+</ol>
+<p>睡了睡了，明天继续训练吧。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020-06-09]]></title>
         <id>https://zholofmeister.github.io/post/2020-06-09/</id>
