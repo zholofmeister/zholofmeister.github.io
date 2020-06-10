@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>2020-06-11 积累网络流模型 &amp;&amp; 脑力训练的一天 | shut the fuck up</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zholofmeister.github.io/favicon.ico?v=1591819227795">
+<link rel="stylesheet" href="https://zholofmeister.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="凌晨3:27
+我干你老师，越睡越晚，早点写完博客睡了XD。
+
+
+有n个项目，每个项目有m个方面的条件和m个方面的结果，单位时间内可以做p个成果，现在问你所有项目单位时间内最多能做多少个工作。
+
+首先原点和0 0 0的连条INF的边，1 1 ..." />
+    <meta name="keywords" content="随笔" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zholofmeister.github.io">
+        <img src="https://zholofmeister.github.io/images/avatar.png?v=1591819227795" class="site-logo">
+        <h1 class="site-title">shut the fuck up</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      what ever can happen will happen
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zholofmeister.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">2020-06-11 积累网络流模型 &amp;&amp; 脑力训练的一天</h2>
+            <div class="post-date">2020-06-11</div>
+            
+            <div class="post-content" v-pre>
+              <h3 id="凌晨327">凌晨3:27</h3>
+<p>我干你老师，越睡越晚，早点写完博客睡了XD。</p>
+<ol>
+<li>
+<p>有n个项目，每个项目有m个方面的条件和m个方面的结果，单位时间内可以做p个成果，现在问你所有项目单位时间内最多能做多少个工作。</p>
+<blockquote>
+<p>首先原点和0 0 0的连条INF的边，1 1 1的和汇点连条INF边，拆点，入点和出点之间边权是p，如果x工作的结果可以达到y工作的条件，那么就x的出点连一条INF的边到y的入度，最后跑一个最大流就行。</p>
+<p>原点和不要任何条件的项目连INF的流<code>-&gt;</code>项目拆点，项目的入点和出点之间连一条p的流，如果项目a完成的结果可以当做项目b的开工条件，那么就a的出点和b的入点连INF的流<code>-&gt;</code>每个条件都有的项目和汇点连INF的流</p>
+</blockquote>
+</li>
+<li>
+<p>有n个奶牛，f个食物和d个饮料，每个奶牛分别想吃某些食物和某些饮料，某个食物和饮料只能用一次，现在问你最多能满足几头牛的需求。</p>
+<blockquote>
+<p>注意每头牛只能满足一次关系，所以要拆点，不然有可能一头牛吃了两顿饭（两个食物和两杯饮料）</p>
+<p>原点和所有食物连1的流，食物和对他有兴趣的牛的入点连1的流，每个牛的入点和他的出点连1的流，牛的出点和他感兴趣的饮料连1的流，所有饮料和汇点连1的流，跑最大流就行。</p>
+<p>原点和所有食物连1的流<code>-&gt;</code> 食物和对他感兴趣的牛的入点连1的流 <code>-&gt;</code> 每个牛的入度和牛的出度连1的流 <code>-&gt;</code>每个牛的出度和他感兴趣的饮料连1的流 <code>-&gt;</code> 每个饮料和汇点连1的流。</p>
+</blockquote>
+</li>
+<li>
+<p>首先你有n个不同种类的插头，现在有m个电器，每个电器有他自己的插头，有k个转换插头，现在问你最少有多少电器的需求不能被满足。</p>
+<blockquote>
+<p>原点和n 个插头连1的流，代表林北现在有这些插头，每个电器和汇点连1的流，但是别急，现在你还不知道汇点在哪呢，因为k个转换插头的缘故，你不知道会不会出现新的种类的插口，所以汇点要等到所有可能的插口输完了才知道。</p>
+<p>原点和n个插头连1的流 <code>-&gt;</code> 转换插头连1的流 <code>-&gt;</code>电器的插头和汇点连1的流</p>
+</blockquote>
+</li>
+<li>
+<p>有n个牛想上学，每个牛和他上学的价值和所要交的学费，现在规定要让c<code>(c是个奇数)</code>头牛上学，只有f钱，问你能获得最大的上学牛之间价值的中位数是多少。</p>
+<blockquote>
+<p>先把所有牛按照价值从小到大排序，然后用优先队列分别从头到尾和从尾到头维护一个选(c-1)/2个牛上学所交学费和的最小值，最后从尾到头扫一遍一开始排好序的牛，如果左边(c-1)/2的最小值和右边(c-1)/2最小值再加上当前牛要交的学费小于等于c，那这个数就是答案，输出。找不到就输出-1。</p>
+</blockquote>
+</li>
+</ol>
+<p>写完啦，跟博客说话挺有意思的，想说啥就说啥，感觉有点精神分裂了哈哈哈。越来越讨厌人际交往了，感觉只有跟讲的来或者目标相同的人说话才不会让我感到反感，所以遇到傻逼混日子的乡下人的干脆别说话，3m耳罩一戴继续滚去刷题，练了拳击以后更加隐忍和忠于自我了奥。</p>
+<p>昨天打拳击时left body shot的时候扭到手腕了奥，今天稍微缓解了一点，这周就不练了吧，遇到傻逼就当成是心理训练了吧。</p>
+<p>现在4:00咯，明天9：45还要爬起来去考体育的立定跳远哦，干你老师，不知道明天会不会白给，晚上还要打一场edu233，不管怎样认真打吧，给自己多点压力 :&gt;</p>
+<blockquote>
+<p>whatever can happen will happen.</p>
+</blockquote>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zholofmeister.github.io/tag/r72Cz2Yzb/" class="tag">
+                    随笔
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zholofmeister.github.io/post/2020-06-10-nao-li-xun-lian-de-yi-tian/">
+                  <h3 class="post-title">
+                    2020-06-10 脑力训练的一天
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
