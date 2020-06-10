@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-06-09T19:20:30.162Z</updated>
+    <updated>2020-06-10T08:22:35.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -28,9 +28,9 @@
 <p>最大权闭合子图。</p>
 <h4 id="什么是最大权闭合子图">什么是最大权闭合子图?</h4>
 <blockquote>
-<p>有一个有向图，每一个点都有一个权值（可以为正或负或0），选择一个权值和最大的子图，使得每个点的后继都在子图里面，这个子图就叫最大权闭合子图。</p>
+<p>有一个有向图，每一个点都有一个权值（可以为正或负或0），选择一个权值和最大的子图，使得每个点的后继都在子图里面，这个子图就叫最大权闭合子图。<br>
+<img src="https://zholofmeister.github.io/post-images/1591777341237.png" alt="" loading="lazy"></p>
 </blockquote>
-<figure data-type="image" tabindex="1"><img src="https://img-blog.csdn.net/20170826170245647?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2FuOTE5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="有向图" loading="lazy"></figure>
 <h4 id="如果搞">如果搞？</h4>
 <blockquote>
 <p>最大闭权子图一个经典的网络流问题，如果一个点被选择了则后继必须被选择，那么称该图是 闭合的，因此该问题叫做最大权闭合子图问题。可以使用最小割解决。<br>
