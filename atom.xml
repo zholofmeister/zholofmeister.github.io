@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-06-10T20:00:32.843Z</updated>
+    <updated>2020-06-11T18:08:07.885Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -10,6 +10,34 @@
     <logo>https://zholofmeister.github.io/images/avatar.png</logo>
     <icon>https://zholofmeister.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, shut the fuck up</rights>
+    <entry>
+        <title type="html"><![CDATA[2020-06-12 edu场毒瘤啊 && 脑力训练的一天]]></title>
+        <id>https://zholofmeister.github.io/post/2020-06-12-edu-chang-du-liu-a-and-nao-li-xun-lian-de-yi-tian/</id>
+        <link href="https://zholofmeister.github.io/post/2020-06-12-edu-chang-du-liu-a-and-nao-li-xun-lian-de-yi-tian/">
+        </link>
+        <updated>2020-06-11T18:07:34.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="凌晨153">凌晨1:53</h3>
+<p>今天周四，准确的说是昨天周四，我还以为周五，关键是我早上我9:40醒了，想再睡5分钟，但是睡到11点，以为体育考试鸽了，好麻烦，结果看了下微信体育群没通知？？然后看了看日历，发现是周四，草。</p>
+<p>搞了到判断一个无向图有没有<code>欧拉回路</code>的水题。</p>
+<p>今天搞了道网络流，每个人走到房子都有一个代价，现在问你代价和最小是多少</p>
+<ol>
+<li>
+<p>最小费用最大流</p>
+<p>超级原点和每个人连一条容量1费用0的流，每个房子和超级汇点连一条容量1费用0的流，然后每个人和他可以到的房子连一条容量1费用为代价的流，跑最小费用最大流，最小费用就是代价的最小值。</p>
+</li>
+<li>
+<p>KM</p>
+<p>把权值搞成负值，然后跑个KM再取个相反数就是答案了。</p>
+</li>
+</ol>
+<p>edu场是毒瘤把，已经三场edu掉分了，还都是<strong>大分</strong>，不知道说什么。</p>
+<p>就做了ABC，AB没什么讲的，A我还wa了一次，真的索嗨，C是一道让你走只有01的迷宫，从<code>(1,1)</code>走到<code>(n, m)</code>，要求走的每条足迹是个回文串，现在问你最少要改原图几个位置才能满足这一需求。</p>
+<blockquote>
+<p>主要是看对称位置，记录一下信息就行，我他吗搞了半天并查集，最后还搞出来了，其实是一个东西，比赛的时候也有点想到记录对称位置的思想，但是没从<code>(i + j)</code>和<code>(n + m - (i + j))</code>的关系想，学到了，格子图有使要关注<code>(i + j)</code>的意义。</p>
+</blockquote>
+<p>6.12号了，明天可以文化课复习起来了，7月之前再学两个新算法吧，以上。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020-06-11 积累网络流模型 && 脑力训练的一天]]></title>
         <id>https://zholofmeister.github.io/post/2020-06-11-ji-lei-wang-luo-liu-mo-xing-and-nao-li-xun-lian-de-yi-tian/</id>
