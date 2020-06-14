@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-06-11T18:08:07.885Z</updated>
+    <updated>2020-06-14T19:35:20.426Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>https://zholofmeister.github.io/images/avatar.png</logo>
     <icon>https://zholofmeister.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, shut the fuck up</rights>
+    <entry>
+        <title type="html"><![CDATA[2020-6-15 最小割唯一性 && d525软路由试用]]></title>
+        <id>https://zholofmeister.github.io/post/2020-6-15-zui-xiao-ge-wei-yi-xing-and-d525-ruan-lu-you-shi-yong/</id>
+        <link href="https://zholofmeister.github.io/post/2020-6-15-zui-xiao-ge-wei-yi-xing-and-d525-ruan-lu-you-shi-yong/">
+        </link>
+        <updated>2020-06-14T19:34:31.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="凌晨323">凌晨3:23</h3>
+<p>今天补了一下昨天cf的题，原来建图可以不建所有的点也可以搞出答案，而且是更简单地判断出是否能搞出答案。</p>
+<p>还学了一下最小割唯一性如何判定 - &gt; <a href="https://www.cnblogs.com/lishiyao/p/6606583.html">策爷的思路</a>：</p>
+<ol>
+<li>对于任意一条满流边(u,v)，(u,v)<strong>能够</strong>出现在某个最小割集中，当且仅当<code>belong[u] != belong[v]</code>。</li>
+<li>对于任意一条满流边(u,v)，(u,v)<strong>必定</strong>出现在最小割集中，当且仅当<code>belong[u] == belong[s]且belong[v] == belong[t]</code>。</li>
+</ol>
+<blockquote>
+<p>最后遍历之前输入的每条边就行了，如果是双向的就遍历他的两条单向边。</p>
+</blockquote>
+<p>然后就划水了一晚上，干你老师，搞了下软路由，d525是真的牛逼奥，功率20w，wdnm，冬天暖手用，还有遇到的一个问题，pppoe拨号后连不上网，然后进wan口的高级设置里把 <code>obtain IPv6-Address</code>改成禁用就行了。</p>
+<p>![FireShot Capture 007 - OpenWrt - 接口 - LuCI - 192.168.5.1](C:\Users\zzy81\Documents\Gridea\images\FireShot Capture 007 - OpenWrt - 接口 - LuCI - 192.168.5.1.png)</p>
+<p>明天真要开始复习文化课咯，6.20还有个杭电校赛XD，好好打。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020-06-12 edu场毒瘤啊 && 脑力训练的一天]]></title>
         <id>https://zholofmeister.github.io/post/2020-06-12-edu-chang-du-liu-a-and-nao-li-xun-lian-de-yi-tian/</id>
@@ -257,38 +278,6 @@
 <p>1.先把n1背后的防滑垫搞掉，把螺丝拧下来，然后把后盖撬一下，就掉下来了，接下来就把他放那先别动好了。<br>
 2.接下来就下载了wepad大神的救砖教程，先按照他的教程把他给的文件复制到usb burning tools下的license文件中，然后先导入烧录包，把两个擦除都点取消，点开始，接下来先用usb公对公线把n1和电脑相连，然后最重要的一步来了，先用镊子短接两个点，具体可以谷歌搜是哪两个，然后再短接两个点的同时插入电源，这样usb burning tools 就会识别出设备，就会自己开始烧录了，但是他的n1和t1固件都烧录不成功，一个在%1一个在%26就报错了，后来看了韩风talk的视频想到用rush大神的荒野蛮夷固件，一次就成功了！</p>
 <p>搞了两个小时可还行，个人觉得刷机比刷题累多了XD。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://zholofmeister.github.io/post/hello-gridea/</id>
-        <link href="https://zholofmeister.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
 ]]></content>
     </entry>
 </feed>
