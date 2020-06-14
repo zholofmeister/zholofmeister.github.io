@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-06-14T20:02:23.048Z</updated>
+    <updated>2020-06-14T20:03:36.817Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -21,10 +21,10 @@
 <p>还学了一下最小割唯一性如何判定 - &gt; <a href="https://www.cnblogs.com/lishiyao/p/6606583.html">策爷的思路</a>：</p>
 <ol>
 <li>
-<p>对于任意一条满流边(u,v)，(u,v)******能够******出现在某个最小割集中，当且仅当<code>belong[u] != belong[v]</code>。</p>
+<p>对于任意一条满流边(u,v)，(u,v)<strong>能够</strong>出现在某个最小割集中，当且仅当<code>belong[u] != belong[v]</code>。</p>
 </li>
 <li>
-<p>对于任意一条满流边(u,v)，(u,v)******必定******出现在最小割集中，当且仅当<code>belong[u] == belong[s]且belong[v] == belong[t]</code>。</p>
+<p>对于任意一条满流边(u,v)，(u,v)<strong>必定</strong>出现在最小割集中，当且仅当<code>belong[u] == belong[s]且belong[v] == belong[t]</code>。</p>
 </li>
 </ol>
 <blockquote>
