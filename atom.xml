@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-06-14T20:03:36.817Z</updated>
+    <updated>2020-06-20T19:49:02.042Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://zholofmeister.github.io/images/avatar.png</logo>
     <icon>https://zholofmeister.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, shut the fuck up</rights>
+    <entry>
+        <title type="html"><![CDATA[2020-06-21 杭电校赛 && 期末复习]]></title>
+        <id>https://zholofmeister.github.io/post/2020-06-21-hang-dian-xiao-sai-and-qi-mo-fu-xi/</id>
+        <link href="https://zholofmeister.github.io/post/2020-06-21-hang-dian-xiao-sai-and-qi-mo-fu-xi/">
+        </link>
+        <updated>2020-06-20T19:47:50.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="凌晨342">凌晨3：42</h3>
+<blockquote>
+<p>好久没写博客了，说些什么吧。</p>
+</blockquote>
+<p>今天打了校赛，12点的校赛，我11:10被老妈和闹钟叫醒的，然后心想再眯一会，眯到11：50，哦吼，完蛋，只能早饭都不吃直接去实验室打比赛，12:08左右到的实验室，直接就开始打比赛了，间歇性禁食+acm更香哦，最后结果还行吧，会做的题基本上都做出来了，除了好几天没写代码手感有点不太好，好几题都先wa了一两次，1a率感人..打完就急不可耐的去吃饭啦，红火飞扬的鸡排好难吃。。以后不吃了。</p>
+<p>明天可以开始看概率论了，感觉时间还是蛮多的，说不定晚上还可以做几道题233。</p>
+<p>今天大概就是这样了，下午校赛，晚上看了会线代，凌晨看了会大物。</p>
+<blockquote>
+<p>今天获得的最大教训就是以后醒了一定要起床啊，不然会坏大事！</p>
+</blockquote>
+<p>以上。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020-6-15 最小割唯一性 && d525软路由试用]]></title>
         <id>https://zholofmeister.github.io/post/2020-6-15-zui-xiao-ge-wei-yi-xing-and-d525-ruan-lu-you-shi-yong/</id>
@@ -268,20 +287,6 @@
         </link>
         <updated>2020-06-08T06:14:20.000Z</updated>
         <content type="html"><![CDATA[<p>上午线代？白给，不想听，下午去实验室搞了一下，鼠标和桌子是真的脏，尤其是鼠标还有一股我这辈子没闻过的奇特味道，像是鱼腥味，我也不知道放实验室放了半年怎么会有鱼腥味的，是真的牛皮，下午做了照着kuangbin专题两道最大流模板，发现了自己isap模板里的锅，一开始没把d数组全赋为INF，谢谢这道题。晚上打了会拳击，又搞了一道网络流，题意是有n个作业和m个机器，一个作业在某个时间只能分给一个机器，一个机器在某个时间只能完成一个作业，n个作业有三个参数p,s,e，表示需要p时间做完,可以在s~e这段时间内搞完，问你可不可以搞完全部的作业？建图思路是先搞一个超级原点s和超级汇点t，然后s向每个作业连容量为p的边，表示需要你用p单位流量搞完，怎么搞的我不管，每个作业又和他的时间中的每一天连一条容量为1的边，表示每天能做1份作业，最后每一天连向汇点一条容量为m，也就是机器数量的边，因为有m台机器，表示每一天能搞掉m份作业，建图就没了，跑个最大流，看maxflow 和所有 p 的总和相不相等，相等就是Yes，可以搞定，否则则就是No，因为No打成了NO wa了一发，略难受，马上睡了，再看看typora的使用吧，反正明天没课，起了床就滚去实验室了，nightnight。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[斐讯n1救砖日记]]></title>
-        <id>https://zholofmeister.github.io/post/fei-xun-n1-jiu-zhuan-ri-ji/</id>
-        <link href="https://zholofmeister.github.io/post/fei-xun-n1-jiu-zhuan-ri-ji/">
-        </link>
-        <updated>2020-06-08T06:13:47.000Z</updated>
-        <content type="html"><![CDATA[<p>今天突然想把砖救活的欲望大过了刷题的欲望，于是就搜了搜如何救n1的砖，上次因为没有合适的螺丝刀就先过了，今天去问别人接了个螺丝刀，一个个试，换到最小号的终于能拧开了..，然后隔壁寝室竟然有镊子（短接进入强制线刷模式用）？？太幸运了，借来用一下，以下是教程。</p>
-<p>材料：<br>
-刷机固件，螺丝刀，镊子（或者任何能用来短接的东西）,USB公对公数据线。</p>
-<p>1.先把n1背后的防滑垫搞掉，把螺丝拧下来，然后把后盖撬一下，就掉下来了，接下来就把他放那先别动好了。<br>
-2.接下来就下载了wepad大神的救砖教程，先按照他的教程把他给的文件复制到usb burning tools下的license文件中，然后先导入烧录包，把两个擦除都点取消，点开始，接下来先用usb公对公线把n1和电脑相连，然后最重要的一步来了，先用镊子短接两个点，具体可以谷歌搜是哪两个，然后再短接两个点的同时插入电源，这样usb burning tools 就会识别出设备，就会自己开始烧录了，但是他的n1和t1固件都烧录不成功，一个在%1一个在%26就报错了，后来看了韩风talk的视频想到用rush大神的荒野蛮夷固件，一次就成功了！</p>
-<p>搞了两个小时可还行，个人觉得刷机比刷题累多了XD。</p>
 ]]></content>
     </entry>
 </feed>
