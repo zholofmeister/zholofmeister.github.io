@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-06-20T19:49:02.042Z</updated>
+    <updated>2020-06-23T19:39:36.040Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -10,6 +10,42 @@
     <logo>https://zholofmeister.github.io/images/avatar.png</logo>
     <icon>https://zholofmeister.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, shut the fuck up</rights>
+    <entry>
+        <title type="html"><![CDATA[2020-6-24 考线代咯]]></title>
+        <id>https://zholofmeister.github.io/post/2020-6-24-kao-xian-dai-ge/</id>
+        <link href="https://zholofmeister.github.io/post/2020-6-24-kao-xian-dai-ge/">
+        </link>
+        <updated>2020-06-23T19:37:52.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="凌晨302">凌晨3:02</h3>
+<p>明天考线代了，今天做一个线代概念总结吧。</p>
+<ol>
+<li>除了求矩阵的秩不用化简到最简阶梯型，其他都要化简到最简阶梯型，最简阶梯型的每个主元都<code>一定是1</code>。</li>
+<li>求极大线性无关组
+<ul>
+<li>如果阶梯型矩阵的秩 &lt; m,说明线性相关，如果等于m，说明线性无关。</li>
+<li>如果存在一组k，能使k1a1+k2a2+...+kmam == 0其中k<code>不全为0</code>，则说明线性相关，否则线性无关。</li>
+</ul>
+</li>
+<li>齐次线性方程组
+<ul>
+<li>如果阶梯型矩阵的秩 &lt; m，说明有无穷多解，且有<code>n - R(A)</code>个基础解系</li>
+<li>如果等于m，只有零解</li>
+</ul>
+</li>
+<li>非齐次线性方程组
+<ul>
+<li>如果<code>R(A) != R(A:B)</code>, 无解。</li>
+<li>如果<code>R(A) == R(A:B) == m</code>，有唯一解。</li>
+<li>如果<code>R(A) == R(A:B) &lt; m</code>, 有无穷多解。</li>
+<li>求通解就是先让每个自由元变成1，其他的自由元变成0，然后得到主元的值，分别得到几个基础解系，然后<code>k x 每个基础解系</code> + <code>最后一列数</code>就是答案。（k为任意数）。</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>大概也就这样了吧，前面主要是计算，到时候考场上做完了再重新算一遍就好了。</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020-06-21 杭电校赛 && 期末复习]]></title>
         <id>https://zholofmeister.github.io/post/2020-06-21-hang-dian-xiao-sai-and-qi-mo-fu-xi/</id>
@@ -278,15 +314,6 @@
 <p>第一道题目让你求最大流 / 最大单流流量的最小值，因为最大流是恒定的，所以要找最大的单流流量值，我已开始的想法是遍历汇点周围的水管，取个max，但这有个问题，因为他周围的水管不一定是单流，有可能是多条路汇在一起形成的，所以不能这么做，网上正解是先预处理一下，dfs O(V + E)时间内预处理出到达汇点的最大的单流流量值，然后就做完了，跑个最大流再除以预处理出的最大单流流量值就没了。</p>
 <p>第二道题目是女生找男生的升级版，之前也有一道女生找男生，不同的是之前那道题没有还能找k个会吵架的男生这个条件。这题拆点挺有意思的，同样的先用并查集预处理出每个女生和男生关系（吵不吵架）的二维数组，接着遍历每个女生和男生，看他们之间的关系，如果不吵架，那直接连一条容量为1的管子，如果吵架的话，那就让女生连一条容量为k的管子先到 女生' ，接着女生' 再连一条容量为1的管子到男生，这是每次二分要进行判断的步骤，最后如果 maxflow == n * mid就说明能跑mid轮match up，就没了。</p>
 <p>明天继续：）</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020-06-04]]></title>
-        <id>https://zholofmeister.github.io/post/2020-06-04/</id>
-        <link href="https://zholofmeister.github.io/post/2020-06-04/">
-        </link>
-        <updated>2020-06-08T06:14:20.000Z</updated>
-        <content type="html"><![CDATA[<p>上午线代？白给，不想听，下午去实验室搞了一下，鼠标和桌子是真的脏，尤其是鼠标还有一股我这辈子没闻过的奇特味道，像是鱼腥味，我也不知道放实验室放了半年怎么会有鱼腥味的，是真的牛皮，下午做了照着kuangbin专题两道最大流模板，发现了自己isap模板里的锅，一开始没把d数组全赋为INF，谢谢这道题。晚上打了会拳击，又搞了一道网络流，题意是有n个作业和m个机器，一个作业在某个时间只能分给一个机器，一个机器在某个时间只能完成一个作业，n个作业有三个参数p,s,e，表示需要p时间做完,可以在s~e这段时间内搞完，问你可不可以搞完全部的作业？建图思路是先搞一个超级原点s和超级汇点t，然后s向每个作业连容量为p的边，表示需要你用p单位流量搞完，怎么搞的我不管，每个作业又和他的时间中的每一天连一条容量为1的边，表示每天能做1份作业，最后每一天连向汇点一条容量为m，也就是机器数量的边，因为有m台机器，表示每一天能搞掉m份作业，建图就没了，跑个最大流，看maxflow 和所有 p 的总和相不相等，相等就是Yes，可以搞定，否则则就是No，因为No打成了NO wa了一发，略难受，马上睡了，再看看typora的使用吧，反正明天没课，起了床就滚去实验室了，nightnight。</p>
 ]]></content>
     </entry>
 </feed>
