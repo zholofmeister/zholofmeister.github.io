@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-06-23T19:39:36.040Z</updated>
+    <updated>2020-06-27T19:33:51.169Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://zholofmeister.github.io/images/avatar.png</logo>
     <icon>https://zholofmeister.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, shut the fuck up</rights>
+    <entry>
+        <title type="html"><![CDATA[2020-06-28 只剩os和嵌入式就能训练了XD]]></title>
+        <id>https://zholofmeister.github.io/post/2020-06-28-zhi-sheng-os-he-qian-ru-shi-jiu-neng-xun-lian-liao-xd/</id>
+        <link href="https://zholofmeister.github.io/post/2020-06-28-zhi-sheng-os-he-qian-ru-shi-jiu-neng-xun-lian-liao-xd/">
+        </link>
+        <updated>2020-06-27T19:33:02.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="凌晨327">凌晨3:27</h3>
+<p>今天nf上看了部电视剧<code>裸体导演</code>，感觉还可以，比国产nt宫廷剧有意思多了。</p>
+<p>明天考操作系统，后天嵌入式，考完就能回家了233, 7月10号牛客多校第一场，其实回去玩的时间最多也就5天吧，训练不是闹着玩的，打到8月20，我在这里向自己保证每场都当做现场赛打，5个小时绝对专注，希望经过暑假的训练自己的水平能再上一个档次吧，<s>暑假之后至少要上个紫吧</s>。</p>
+<p>操作系统感觉还有好多不会，幸好一页开卷，明天再花一天搞搞。</p>
+<p>以上。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020-6-24 考线代咯]]></title>
         <id>https://zholofmeister.github.io/post/2020-6-24-kao-xian-dai-ge/</id>
@@ -302,18 +315,6 @@
 3.遍历1~j (1 &lt;= j &lt; i)如果 dp[i] == dp[j] + 1 &amp;&amp; a[i] &gt; a<a href="!!!%E5%88%AB%E5%BF%98%E4%BA%86%E8%BF%99%E4%B8%AA">j</a>，那么就 j' 到 i 连一条容量为1的边。<br>
 最后跑一个最大流就是答案辣。</p>
 <p>明天再搞一天网络流常规题型应该就算刷完了，继续努力8</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020-06-06]]></title>
-        <id>https://zholofmeister.github.io/post/2020-06-06/</id>
-        <link href="https://zholofmeister.github.io/post/2020-06-06/">
-        </link>
-        <updated>2020-06-08T06:16:39.000Z</updated>
-        <content type="html"><![CDATA[<p>今天搞了两道网络流（其中一道搞了三个小时），再学了一下如何更新lean大编译的op固件。</p>
-<p>第一道题目让你求最大流 / 最大单流流量的最小值，因为最大流是恒定的，所以要找最大的单流流量值，我已开始的想法是遍历汇点周围的水管，取个max，但这有个问题，因为他周围的水管不一定是单流，有可能是多条路汇在一起形成的，所以不能这么做，网上正解是先预处理一下，dfs O(V + E)时间内预处理出到达汇点的最大的单流流量值，然后就做完了，跑个最大流再除以预处理出的最大单流流量值就没了。</p>
-<p>第二道题目是女生找男生的升级版，之前也有一道女生找男生，不同的是之前那道题没有还能找k个会吵架的男生这个条件。这题拆点挺有意思的，同样的先用并查集预处理出每个女生和男生关系（吵不吵架）的二维数组，接着遍历每个女生和男生，看他们之间的关系，如果不吵架，那直接连一条容量为1的管子，如果吵架的话，那就让女生连一条容量为k的管子先到 女生' ，接着女生' 再连一条容量为1的管子到男生，这是每次二分要进行判断的步骤，最后如果 maxflow == n * mid就说明能跑mid轮match up，就没了。</p>
-<p>明天继续：）</p>
 ]]></content>
     </entry>
 </feed>
