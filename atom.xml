@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-06-27T19:33:51.169Z</updated>
+    <updated>2020-06-28T19:17:55.910Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://zholofmeister.github.io/images/avatar.png</logo>
     <icon>https://zholofmeister.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, shut the fuck up</rights>
+    <entry>
+        <title type="html"><![CDATA[2020-06-29 操作系统考前作死打div3 && vector的erase脑瘫操作]]></title>
+        <id>https://zholofmeister.github.io/post/2020-06-29-cao-zuo-xi-tong-kao-qian-zuo-si-da-div3-and-vector-de-erase-nao-tan-cao-zuo/</id>
+        <link href="https://zholofmeister.github.io/post/2020-06-29-cao-zuo-xi-tong-kao-qian-zuo-si-da-div3-and-vector-de-erase-nao-tan-cao-zuo/">
+        </link>
+        <updated>2020-06-28T19:16:24.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="凌晨309">凌晨3:09</h3>
+<p>明天下午就要考操作系统了，一页开卷的资料还没抄完，看了看cf，今天晚上竟然有div3？？？，果断报名，并且没！有！鸽！做了5题，还行吧，d用了加了玄学防hack的unorder_map，希望别被hack，e1我真的服了，以后我再用vector的erase我就是傻逼，erase的复杂度为删除的个数+最后一个元素之后有多少个元素，所以复杂度为<code>O(n)</code>,我属实脑瘫，<code>while</code>里面疯狂<code>xx.erase(xx.begin())</code>，TLE on test 20了半个小时没找到原因，后来在脑海中残存的数据结构的记忆唤醒了我，好像数组里删一个数是<code>O(n)</code>的啊，所以我vector erase你妈个头啊，不说了，没有下次vector erase了！</p>
+<p>希望明天操作系统能上个70？？<s>80最好啦</s></p>
+<p>以上。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020-06-28 只剩os和嵌入式就能训练了XD]]></title>
         <id>https://zholofmeister.github.io/post/2020-06-28-zhi-sheng-os-he-qian-ru-shi-jiu-neng-xun-lian-liao-xd/</id>
@@ -291,30 +303,6 @@
 </ul>
 <p>F不写了没啥意思，也是思维题，凭感觉搞。<em>来自菜鸡的感觉</em></p>
 <p>看会视频睡喽，明天也要继续努力奥！</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020-06-07]]></title>
-        <id>https://zholofmeister.github.io/post/2020-06-07/</id>
-        <link href="https://zholofmeister.github.io/post/2020-06-07/">
-        </link>
-        <updated>2020-06-08T06:17:37.000Z</updated>
-        <content type="html"><![CDATA[<p>现在是凌晨3:40，因为太饿了搞了杯麦片恰恰，牙白刷了233，写完博客再看学点typora用法就睡了。</p>
-<p>总结一下今天刷的网络流：<br>
-第一题挺自闭的，自己造了好几个模型都不对，还是只能看题解，积累一下模型。<br>
-第二题的问题挺有意思的，不知道怎么说，反正就挺有意思的。</p>
-<ol>
-<li>第一题题意是有给你张有向图，一个原点S和一个汇点T，每条边代表经过一天的时间到达另一个点，现在问你最少要破坏多少个点才能让所有可行路径中没有小于K时间到达T的。</li>
-</ol>
-<p>最小费用最大流，对于每个点，拆点，相互之间连一条容量为1，费用为0的流，每条边的不同的点之间连一条容量为INF，费用为1的流表示要过一天才能到那。 接下来就跑一下MCMF，如果d[T] &gt; k的话就return false(无所谓了，不管他)，然后最后求得的最大流也就是d[T] &lt;= k情况下的最大流，也就是最小割。</p>
-<p>2.第二题题意是给你一个长度为n的数组，现在不仅让你求LIS的长度，还让你求这个长度的LIS有几个（不相交，是原数组的子序列）。<br>
-233，这种从之前的典型例题扩展出更多问题还是挺少的，因为每个位置的元素有限制，限制就是只能被选中在一个子序列中，所以拆点( i 和 i' )，中间连一条容量为1的边，接下来就是dp O(n^2)搞一下LIS，然后遍历1~n建边：<br>
-设LIS长度为ans。<br>
-1.dp[i]  = 1 建一条容量为1的S 到 i的边。<br>
-2.dp[i] = ans 建一条容量为1的 i' 到T的边。<br>
-3.遍历1~j (1 &lt;= j &lt; i)如果 dp[i] == dp[j] + 1 &amp;&amp; a[i] &gt; a<a href="!!!%E5%88%AB%E5%BF%98%E4%BA%86%E8%BF%99%E4%B8%AA">j</a>，那么就 j' 到 i 连一条容量为1的边。<br>
-最后跑一个最大流就是答案辣。</p>
-<p>明天再搞一天网络流常规题型应该就算刷完了，继续努力8</p>
 ]]></content>
     </entry>
 </feed>
