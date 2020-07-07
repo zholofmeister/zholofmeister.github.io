@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-06-28T19:17:55.910Z</updated>
+    <updated>2020-07-07T21:43:28.778Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -10,6 +10,29 @@
     <logo>https://zholofmeister.github.io/images/avatar.png</logo>
     <icon>https://zholofmeister.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, shut the fuck up</rights>
+    <entry>
+        <title type="html"><![CDATA[2020-07-08 快到多校了，要进入状态了]]></title>
+        <id>https://zholofmeister.github.io/post/2020-07-08-kuai-dao-duo-xiao-liao-yao-jin-ru-zhuang-tai-liao/</id>
+        <link href="https://zholofmeister.github.io/post/2020-07-08-kuai-dao-duo-xiao-liao-yao-jin-ru-zhuang-tai-liao/">
+        </link>
+        <updated>2020-07-07T21:42:47.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="凌晨529">凌晨5:29</h3>
+<p>今天是8号，12号就要开始多校了，要开始进入状态了，今天做了几道水题练练手，一题贪心，下面是岸，上面是水，水里有一些小岛，现在让你在岸边放有固定范围的雷达，问你最小要放多少个。</p>
+<blockquote>
+<p>可以转化成最基本的模型，把每个小岛在岸边的可行范围求出来，然后就得到了n个道在岸边的可行范围，所以问题就变成了有n个区间，现在让你选最少的点，使得全覆盖所有区间。</p>
+<p>注意贪心的时候，如果遇到<code>maxr &lt; po[i].l</code>那就直接<code>maxr = po[i].r; ++ans;</code></p>
+<p>！！！如果遇到<code>maxr &gt;= po[i].l</code>,说明区间有交集，别忘了要<code>maxr = min(maxr, po[i].r)</code></p>
+</blockquote>
+<p>然后做了到匈牙利，好久没写代码了，竟然1a了，233。过了一遍前向星和匈牙利。</p>
+<p>然后看了一下19级的题。有道题没人做，就无聊写写。</p>
+<p>挺简单的。。 转念一想我去年这个时候也是这么菜，233.</p>
+<p>给你一张图，上面有门的钥匙和门，现在问你能不能在t时间内走到出口。</p>
+<p>一看钥匙只有A-J，10个字母，状态压缩呗，vis【i】【j】【k】表示在i行j列，目前有k状态钥匙。</p>
+<p>每个钥匙就是用二进制位来表示，2^10 = 1024， 1024 * 20 * 20 == 4e5, 不会MLE。</p>
+<p>然后就跟普通bfs搞一下就行。。</p>
+<p>睡了，明天去趟赛格买点垃圾，然后回来继续进入状态。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020-06-29 操作系统考前作死打div3 && vector的erase脑瘫操作]]></title>
         <id>https://zholofmeister.github.io/post/2020-06-29-cao-zuo-xi-tong-kao-qian-zuo-si-da-div3-and-vector-de-erase-nao-tan-cao-zuo/</id>
@@ -259,50 +282,6 @@
 <blockquote>
 <p>还有一个月就牛客多校了，继续努力吧!</p>
 </blockquote>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020-06-08]]></title>
-        <id>https://zholofmeister.github.io/post/2020-06-08/</id>
-        <link href="https://zholofmeister.github.io/post/2020-06-08/">
-        </link>
-        <updated>2020-06-08T06:21:42.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="凌晨255">凌晨2:55</h3>
-<p>今天没啥收货，最大的收获应该是<strong>cf上分了</strong>吧，但cf水平并不代表现场赛水平，还是要多刷题，确立了明天，准确的说是今天的目标，学习<strong>欧拉回路</strong>。</p>
-<p>就复盘一下今天的cf吧。</p>
-<ul>
-<li>
-<p>A</p>
-<p>给你一个n*m矩形，0表示还没被用，1表示已经被用，现在a和b分别取，取得条件是该行和该列都要是0，也就是该行该列的元素都是0。</p>
-</li>
-</ul>
-<p>​		预处理一下每行为0和每列为0的个数，取个min，判断奇偶即可。</p>
-<ul>
-<li>
-<p>B</p>
-<p>给你n个ai, bi, 这个ai和bi是一个pair，bi只能取0或者1，现在规定只能交换bi不同的pair，问你能不能让a变成non-decreasing的样子。</p>
-<p>首先要知道，只要有有bi == 0 和 bi == 1那他们无论如何都能换成有序的，就像是汉诺塔一样，通过第三根柱子先把一二根柱子搞好，差不多就是这个感觉，如果bi == 0里面a不是non-decreasing的<strong>并且</strong>没有bi == 1就是false，bi == 1同理，因为没想到一定要没有另一个团wa了一发，幸好及时想到 😃</p>
-</li>
-<li>
-<p>C</p>
-<p>也是分别给你一串长度为n的a和b数组，现在问a或者b向左或向右移动后（是个循环，懂我意思吧），最多有多少位置上的数相同。</p>
-<p>因为每个数的范围是(1 &lt;= x &lt;= n), 所以对a数组和b数组分别预记录一下每个数的位置，然后记录向左和向右的距离的数组++, 最后遍历一下向左向右的每种长度的可能取个max就行了。</p>
-<blockquote>
-<p>写个每日总结也是累人啊，gnls，困死了。</p>
-</blockquote>
-</li>
-<li>
-<p>D</p>
-<p>给你一个n*m的迷宫，有空地，墙，好人和坏人，现在问你能不能在除了初始时候好人和坏人和墙的位置的其他位置加墙，使得所有好人能到终点，<strong>并且所有坏人到不了</strong>。</p>
-<p>今天思维还可以，想到的思路基本上都是对的，就是对每个坏人都bfs，只要遇到空地就放墙，然后就结了，最后从终点bfs看能不能到所有的好人就完了。</p>
-</li>
-<li>
-<p>E</p>
-<p>没啥意思，cf专属题，猜猜题，gnls，先取三个，然后看取四个会不会比取三个更优，发现不会比取三个更优，所以取三个（不满三个就取全部喽）是最优的，然后暴力n^3 (n &lt;= 500) 遍历所有可能就行了。</p>
-</li>
-</ul>
-<p>F不写了没啥意思，也是思维题，凭感觉搞。<em>来自菜鸡的感觉</em></p>
-<p>看会视频睡喽，明天也要继续努力奥！</p>
 ]]></content>
     </entry>
 </feed>
