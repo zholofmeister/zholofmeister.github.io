@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-07-31T19:40:34.932Z</updated>
+    <updated>2020-07-31T19:43:54.212Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -10,15 +10,6 @@
     <logo>https://zholofmeister.github.io/images/avatar.png</logo>
     <icon>https://zholofmeister.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, shut the fuck up</rights>
-    <entry>
-        <title type="html"><![CDATA[测试]]></title>
-        <id>https://zholofmeister.github.io/post/ce-shi/</id>
-        <link href="https://zholofmeister.github.io/post/ce-shi/">
-        </link>
-        <updated>2020-07-31T19:40:05.000Z</updated>
-        <content type="html"><![CDATA[<p>测试</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[2020-07-08 快到多校了，要进入状态了]]></title>
         <id>https://zholofmeister.github.io/post/2020-07-08-kuai-dao-duo-xiao-liao-yao-jin-ru-zhuang-tai-liao/</id>
@@ -271,6 +262,26 @@
 </li>
 </ol>
 <p>睡了睡了，明天继续训练吧。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020-06-09]]></title>
+        <id>https://zholofmeister.github.io/post/2020-06-09/</id>
+        <link href="https://zholofmeister.github.io/post/2020-06-09/">
+        </link>
+        <updated>2020-06-08T19:07:54.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="凌晨252">凌晨2:52</h3>
+<p>写点什么吧，想的挺多的一天，我觉得人一定要为自己而活（和家人），真的不去管别人的想法就行（除了家人），我认为只要做<code>自己觉得有价值的事情</code>就行了，比如acm吧，为了acm其实真的没别的时间去干别的事情了，本来可以学很多很多东西，但转念一想有什么用呢，这些东西工作的时候不能学吗，工作了还有时间搞算法和思维层次的东西吗？不会算法出去不就只能当傻逼码农吗，说的好听，搞前端的，搞后端的，不就是傻逼码农吗，你以为你是清华巨佬不用刷题就能秒解问题？我相信大学搞acm是我目前为止人生做的最正确的决定，这就够了，加油吧！下学期拿了牌子以后压力就不会这么大了，再坚持半年。let's get it done boy!!!</p>
+<blockquote>
+<p>whatever can happen will happen. parctice hard and believe in yourself.</p>
+</blockquote>
+<p>今天做了道挺有意思的题，POJ 1904,继续积累模型，有一个n个男生和n个女生组成的二分图，现在已经给你所有关系和其中一个完美匹配，问你每个男生可以选择哪些女生，使得匹配数和最大匹配数相同。</p>
+<p>思路是每个关系是一条单向边，然后被匹配的<code>女生</code>连一条单向边指向<code>男生</code>，然后就跑一下tarjan强连通，判断男生i和女生j搭配也能使匹配数是最大匹配数的依据是i和j在同一个scc中。</p>
+<p>还有一道Hdu 4685, 意思一样，区别就在于有n个男生和m个女生，n和m不一定相同，这就需要虚拟造点了，看了思路没看懂，网上也没人解释为什么，debug了2个小时感觉就在蒙，不写了，水平还没到，写了也是白写。</p>
+<p>哦对了，因为我的某些傻逼操作，把之前存在本地的博客都删了，不知道怎么恢复，只能重新发了一遍，网上找了一个软件叫GoodSync，是一个可以自动备份到本地或者外接硬盘或者云盘的一个蛮好的软件，以后只要电脑不挂就不怕丢东西了，XD。</p>
+<blockquote>
+<p>还有一个月就牛客多校了，继续努力吧!</p>
+</blockquote>
 ]]></content>
     </entry>
 </feed>
