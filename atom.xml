@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-11-15T18:40:36.883Z</updated>
+    <updated>2020-11-15T18:41:02.487Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>https://zholofmeister.github.io/images/avatar.png</logo>
     <icon>https://zholofmeister.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, shut the fuck up</rights>
+    <entry>
+        <title type="html"><![CDATA[电脑搞了两天终于搞好啦，写个自闭日记吧]]></title>
+        <id>https://zholofmeister.github.io/post/dian-nao-gao-liao-liang-tian-zhong-yu-gao-hao-la-xie-ge-zi-bi-ri-ji-ba/</id>
+        <link href="https://zholofmeister.github.io/post/dian-nao-gao-liao-liang-tian-zhong-yu-gao-hao-la-xie-ge-zi-bi-ri-ji-ba/">
+        </link>
+        <updated>2020-11-15T18:40:38.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>2020-11-16 2:28 周一凌晨</strong></p>
+<p>终于经过了人生中可以算是很自闭的两天，无语了，写点日记回忆一下之前两天发生过的事吧。</p>
+<ul>
+<li>
+<p>周六</p>
+<p>早上打完蓝桥杯，回来开电脑，nmb发现开不了了，然后就在疯狂插拔内存条，插拔内存条，硬盘线，各种奇怪的线，插拔了一天。（去了下科技城的宝龙，感觉一般啊。。还是sz好，然后回去接着自闭），还有明天新生杯的事情，就很烦。</p>
+</li>
+<li>
+<p>周日</p>
+<p>新生杯早上11:30起的，然后吃点早饭，加急写完了题解就开始新生赛了，开始看榜，这届新生好牛逼啊，有几道人类智慧题都过了，但是简单题没过？？不懂，应该是天赋型选手只是不会算复杂度吧。然后从下午3:30开始弄到11:30，拔插内存条。nmb，到了12点，突发奇想就想插拔一下cpu，因为之前看过Huan的影片，有一次就是因为cpu接触问题读不到内存条，所以我就试了一下，一发ac，nmsl。</p>
+</li>
+</ul>
+<p>这就是人生吧，尝试解决问题的中途你会想放弃，你会想为什么这种事会发生在我身上，但你只要keep grinding，相信事情在某一天会发生质变，你只要坚持到质变的那一天，你就成功了，that's how diamond are made！永远不要别放弃,never give up.</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ccpc长春被锤爆力，继续努力]]></title>
         <id>https://zholofmeister.github.io/post/ccpc-chang-chun-bei-chui-bao-li-ji-xu-nu-li/</id>
@@ -158,31 +179,6 @@
 <p>今天获得的最大教训就是以后醒了一定要起床啊，不然会坏大事！</p>
 </blockquote>
 <p>以上。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020-6-15 最小割唯一性 && d525软路由试用]]></title>
-        <id>https://zholofmeister.github.io/post/2020-6-15-zui-xiao-ge-wei-yi-xing-and-d525-ruan-lu-you-shi-yong/</id>
-        <link href="https://zholofmeister.github.io/post/2020-6-15-zui-xiao-ge-wei-yi-xing-and-d525-ruan-lu-you-shi-yong/">
-        </link>
-        <updated>2020-06-14T19:34:31.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="凌晨323">凌晨3:23</h3>
-<p>今天补了一下昨天cf的题，原来建图可以不建所有的点也可以搞出答案，而且是更简单地判断出是否能搞出答案。</p>
-<p>还学了一下最小割唯一性如何判定 - &gt; <a href="https://www.cnblogs.com/lishiyao/p/6606583.html">策爷的思路</a>：</p>
-<ol>
-<li>
-<p>对于任意一条满流边(u,v)，(u,v)<strong>能够</strong>出现在某个最小割集中，当且仅当<code>belong[u] != belong[v]</code>。</p>
-</li>
-<li>
-<p>对于任意一条满流边(u,v)，(u,v)<strong>必定</strong>出现在最小割集中，当且仅当<code>belong[u] == belong[s]且belong[v] == belong[t]</code>。</p>
-</li>
-</ol>
-<blockquote>
-<p>最后遍历之前输入的每条边就行了，如果是双向的就遍历他的两条单向边。</p>
-</blockquote>
-<p>然后就划水了一晚上，干你老师，搞了下软路由，d525是真的牛逼奥，功率20w，wdnm，冬天暖手用，还有遇到的一个问题，pppoe拨号后连不上网，然后进wan口的高级设置里把 <code>obtain IPv6-Address</code>改成禁用就行了。</p>
-<figure data-type="image" tabindex="1"><img src="https://zholofmeister.github.io/post-images/1592164937633.png" alt="" loading="lazy"></figure>
-<p>明天真要开始复习文化课咯，6.20还有个杭电校赛XD，好好打。</p>
 ]]></content>
     </entry>
 </feed>
