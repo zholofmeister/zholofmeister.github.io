@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-11-15T18:42:13.898Z</updated>
+    <updated>2020-11-22T16:34:40.035Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://zholofmeister.github.io/images/avatar.png</logo>
     <icon>https://zholofmeister.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, shut the fuck up</rights>
+    <entry>
+        <title type="html"><![CDATA[atcoder水一发日记]]></title>
+        <id>https://zholofmeister.github.io/post/atcoder-shui-yi-fa-ri-ji/</id>
+        <link href="https://zholofmeister.github.io/post/atcoder-shui-yi-fa-ri-ji/">
+        </link>
+        <updated>2020-11-22T16:32:50.000Z</updated>
+        <content type="html"><![CDATA[<p>ab签到，c分类讨论，其实两个for枚举就能简化很多啦，我在那边wa了3发..想复杂了，d是个三维期望dp，可以从终点往前dp，e就是一个稍微加了点东西的bfs，最后一题听牛逼群友说是超大背包裸题啊，明天起来补掉。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[电脑搞了两天终于搞好啦，写个自闭日记吧]]></title>
         <id>https://zholofmeister.github.io/post/dian-nao-gao-liao-liang-tian-zhong-yu-gao-hao-la-xie-ge-zi-bi-ri-ji-ba/</id>
@@ -160,25 +169,6 @@
 <blockquote>
 <p>大概也就这样了吧，前面主要是计算，到时候考场上做完了再重新算一遍就好了。</p>
 </blockquote>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020-06-21 杭电校赛 && 期末复习]]></title>
-        <id>https://zholofmeister.github.io/post/2020-06-21-hang-dian-xiao-sai-and-qi-mo-fu-xi/</id>
-        <link href="https://zholofmeister.github.io/post/2020-06-21-hang-dian-xiao-sai-and-qi-mo-fu-xi/">
-        </link>
-        <updated>2020-06-20T19:47:50.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="凌晨342">凌晨3：42</h3>
-<blockquote>
-<p>好久没写博客了，说些什么吧。</p>
-</blockquote>
-<p>今天打了校赛，12点的校赛，我11:10被老妈和闹钟叫醒的，然后心想再眯一会，眯到11：50，哦吼，完蛋，只能早饭都不吃直接去实验室打比赛，12:08左右到的实验室，直接就开始打比赛了，间歇性禁食+acm更香哦，最后结果还行吧，会做的题基本上都做出来了，除了好几天没写代码手感有点不太好，好几题都先wa了一两次，1a率感人..打完就急不可耐的去吃饭啦，红火飞扬的鸡排好难吃。。以后不吃了。</p>
-<p>明天可以开始看概率论了，感觉时间还是蛮多的，说不定晚上还可以做几道题233。</p>
-<p>今天大概就是这样了，下午校赛，晚上看了会线代，凌晨看了会大物。</p>
-<blockquote>
-<p>今天获得的最大教训就是以后醒了一定要起床啊，不然会坏大事！</p>
-</blockquote>
-<p>以上。</p>
 ]]></content>
     </entry>
 </feed>
