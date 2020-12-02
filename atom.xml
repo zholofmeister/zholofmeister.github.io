@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zholofmeister.github.io</id>
     <title>shut the fuck up</title>
-    <updated>2020-11-22T16:34:40.035Z</updated>
+    <updated>2020-12-02T17:25:55.245Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zholofmeister.github.io"/>
     <link rel="self" href="https://zholofmeister.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://zholofmeister.github.io/images/avatar.png</logo>
     <icon>https://zholofmeister.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, shut the fuck up</rights>
+    <entry>
+        <title type="html"><![CDATA[beast mode initiated (直到这学期结束)]]></title>
+        <id>https://zholofmeister.github.io/post/beast-mode-initiated-zhi-dao-zhe-xue-qi-jie-shu/</id>
+        <link href="https://zholofmeister.github.io/post/beast-mode-initiated-zhi-dao-zhe-xue-qi-jie-shu/">
+        </link>
+        <updated>2020-12-02T17:24:38.000Z</updated>
+        <content type="html"><![CDATA[<p>RT,没课就下午训练，晚上回去有cf打cf，没cf学文化课。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[atcoder水一发日记]]></title>
         <id>https://zholofmeister.github.io/post/atcoder-shui-yi-fa-ri-ji/</id>
@@ -133,42 +142,6 @@
 <p>明天考操作系统，后天嵌入式，考完就能回家了233, 7月10号牛客多校第一场，其实回去玩的时间最多也就5天吧，训练不是闹着玩的，打到8月20，我在这里向自己保证每场都当做现场赛打，5个小时绝对专注，希望经过暑假的训练自己的水平能再上一个档次吧，<s>暑假之后至少要上个紫吧</s>。</p>
 <p>操作系统感觉还有好多不会，幸好一页开卷，明天再花一天搞搞。</p>
 <p>以上。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020-6-24 考线代咯]]></title>
-        <id>https://zholofmeister.github.io/post/2020-6-24-kao-xian-dai-ge/</id>
-        <link href="https://zholofmeister.github.io/post/2020-6-24-kao-xian-dai-ge/">
-        </link>
-        <updated>2020-06-23T19:37:52.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="凌晨302">凌晨3:02</h3>
-<p>明天考线代了，今天做一个线代概念总结吧。</p>
-<ol>
-<li>除了求矩阵的秩不用化简到最简阶梯型，其他都要化简到最简阶梯型，最简阶梯型的每个主元都<code>一定是1</code>。</li>
-<li>求极大线性无关组
-<ul>
-<li>如果阶梯型矩阵的秩 &lt; m,说明线性相关，如果等于m，说明线性无关。</li>
-<li>如果存在一组k，能使k1a1+k2a2+...+kmam == 0其中k<code>不全为0</code>，则说明线性相关，否则线性无关。</li>
-</ul>
-</li>
-<li>齐次线性方程组
-<ul>
-<li>如果阶梯型矩阵的秩 &lt; m，说明有无穷多解，且有<code>n - R(A)</code>个基础解系</li>
-<li>如果等于m，只有零解</li>
-</ul>
-</li>
-<li>非齐次线性方程组
-<ul>
-<li>如果<code>R(A) != R(A:B)</code>, 无解。</li>
-<li>如果<code>R(A) == R(A:B) == m</code>，有唯一解。</li>
-<li>如果<code>R(A) == R(A:B) &lt; m</code>, 有无穷多解。</li>
-<li>求通解就是先让每个自由元变成1，其他的自由元变成0，然后得到主元的值，分别得到几个基础解系，然后<code>k x 每个基础解系</code> + <code>最后一列数</code>就是答案。（k为任意数）。</li>
-</ul>
-</li>
-</ol>
-<blockquote>
-<p>大概也就这样了吧，前面主要是计算，到时候考场上做完了再重新算一遍就好了。</p>
-</blockquote>
 ]]></content>
     </entry>
 </feed>
